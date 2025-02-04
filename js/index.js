@@ -48,16 +48,16 @@ Student.prototype.summary = function() {
   const averageAttendance = numberOfVisits / numberOfClasses; // Середнє відвідування
 
   if ( averageRating > 90 && averageAttendance > 0.9) {
-    console.log("Молодець!");
+    alert ("Молодець!");
   } else if ( averageRating > 90 || averageAttendance > 0.9) {
-    console.log("Добре, але можна краще");
+    alert ("Добре, але можна краще");
 } else {
-    console.log("Редиска!");
+    alert ("Редиска!");
   }
 }
 
 
-let stud = new Student('Alex', 'Johnson', '2017', [100, 90, 96, 84]);
+const stud = new Student('Alex', 'Johnson', '2017', [100, 90, 96, 84]);
 stud.present();
 stud.present();
 stud.absent();
@@ -67,7 +67,7 @@ console.log(stud.studentsAge());
 console.log(stud.averageScore());
 console.log(stud);
 
-let stud2= new Student('Mary', 'Smith', '2000', [90, 71, 88, 78]);
+const stud2= new Student('Mary', 'Smith', '2000', [90, 71, 88, 78]);
 stud2.present();
 stud2.present();
 stud2.absent();
@@ -79,7 +79,7 @@ console.log(stud2.studentsAge());
 console.log(stud2.averageScore());
 console.log(stud2);
 
-let stud3= new Student('John', 'Travolta', '1980', [100, 100, 99, 100, 100]);
+const stud3= new Student('John', 'Travolta', '1980', [100, 100, 99, 100, 100]);
 stud3.present();
 stud3.present();
 stud3.present();
